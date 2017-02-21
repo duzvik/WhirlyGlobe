@@ -42,6 +42,11 @@
  */
 @property (nonatomic,assign) double rotation;
 
+/** @brief Whether to lock the rotation to the map/globe or the screen.
+ @details If this is true, rotation is locked physically. If false, rotatino is locked in screen coordinates.
+ */
+@property (nonatomic,assign) bool lockRotation;
+
 /** @brief Image or texture to use for the marker.
     @details If set we'll stretch this UIImage (or MaplyTexture) out over the marker rectangle.  If not set, the marker will just be a colored rectange.  The view controller tracks this object and will reuse its texture and dispose of it as needed.
   */
